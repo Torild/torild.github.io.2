@@ -1,0 +1,9 @@
+permalink: /:categories/:title
+markdown: kramdown
+
+gems:
+    - jekyll-sitemap
+
+name: Torild Lidman
+url: https://torild.github.io
+description: The coolest website.

@@ -1,0 +1,25 @@
+---
+layout: layout
+title: "Posts"
+---
+
+<style>
+    .link-posts {
+        background-color: #29335c;
+        color: #fff;
+    }
+</style>
+
+<section>
+    {% for post in site.posts %}
+        {% unless post.draft %}
+
+            <a href="{{ post.url }}" class="post">
+                <p>{{ post.date | date: "%B %e, %Y" }}</p>
+               <h1>{{ post.title }}</h1>
+            </a>
+
+        {% endunless %}
+    {% endfor %}
+        
+</section>
